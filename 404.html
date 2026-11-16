@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Mirazul Islam</title>
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102744'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23FFFFFF' font-family='Arial,sans-serif' font-weight='700' font-size='26'%3EMI%3C/text%3E%3C/svg%3E"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Bengali:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--bg-hero);
+      text-align: center;
+    }
+    .error-card {
+      max-width: 540px;
+      width: 100%;
+      padding: 44px 32px;
+    }
+    .error-code {
+      font-size: 4.5rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent-blue);
+      margin-bottom: 12px;
+    }
+    .error-bn {
+      margin-top: 8px;
+      font-family: var(--font-bn);
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+    .error-actions {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <div class="card error-card">
+      <div class="error-code">404</div>
+      <h1 class="section-title">Page Not Found</h1>
+      <p>The page you are looking for does not exist or may have been moved.</p>
+      <p class="error-bn">দুঃখিত, আপনি যে পেজটি খুঁজছেন তা পাওয়া যায়নি।</p>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">Back to Portfolio Home / হোমে ফিরে যান</a>
+      </div>
+    </div>
+  </main>
+  <script>
+    const savedTheme = localStorage.getItem("portfolio_theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+  </script>
+</body>
+</html>
